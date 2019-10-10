@@ -105,7 +105,7 @@
                   data-splitin="none" 
                   data-splitout="none" 
                   data-responsive_offset="on" 
-                  style="z-index: 7; white-space: nowrap;"><a href="#" class="btn btn-dark btn-circled btn-theme-colored2 btn-xl mr-10 pr-30 pl-30">Start Now</a> <a href="#" class="btn btn-transparent btn-border btn-circled btn-xl pr-30 pl-30">Register Now</a>
+                  style="z-index: 7; white-space: nowrap;"><a href="registration.php" class="btn btn-dark btn-circled btn-theme-colored2 btn-xl mr-10 pr-30 pl-30">Start Now</a>
                 </div>
               </li>
               <!-- SLIDE 2 -->
