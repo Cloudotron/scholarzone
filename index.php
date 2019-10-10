@@ -411,7 +411,7 @@
               </div>
               <div class="feature-title">
                 <h3>Step-1</h3>
-                <p>Register yourself and apply for the Scholarship or Extra Curricular Activities</p>
+                <p>Register yourself and apply for the Scholarship</p>
               </div>
             </div>
           </div>
