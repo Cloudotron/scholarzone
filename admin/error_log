@@ -1,0 +1,56 @@
+[04-Sep-2019 18:19:46 Etc/GMT] PHP Fatal error:  Call to undefined method script::getRejE() in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/dashboard.php on line 174
+[04-Sep-2019 18:26:56 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10
+[04-Sep-2019 18:26:56 Etc/GMT] PHP Warning:  Missing argument 3 for script::update_application(), called in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10 and defined in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 511
+[04-Sep-2019 18:26:56 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 512
+[04-Sep-2019 18:26:56 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 522
+[04-Sep-2019 18:31:33 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10
+[04-Sep-2019 18:31:33 Etc/GMT] PHP Warning:  Missing argument 3 for script::update_application(), called in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10 and defined in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 511
+[04-Sep-2019 18:31:33 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 518
+[04-Sep-2019 18:31:33 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 521
+[04-Sep-2019 18:32:22 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10
+[04-Sep-2019 18:32:22 Etc/GMT] PHP Warning:  Missing argument 3 for script::update_application(), called in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10 and defined in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 511
+[04-Sep-2019 18:32:22 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 518
+[04-Sep-2019 18:32:22 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 521
+[04-Sep-2019 18:34:27 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10
+[04-Sep-2019 18:34:27 Etc/GMT] PHP Warning:  Missing argument 3 for script::update_application(), called in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10 and defined in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 511
+[04-Sep-2019 18:34:27 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 518
+[04-Sep-2019 18:34:27 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 521
+[04-Sep-2019 18:35:34 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10
+[04-Sep-2019 18:35:34 Etc/GMT] PHP Warning:  Missing argument 3 for script::update_application(), called in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10 and defined in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 511
+[04-Sep-2019 18:35:34 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 518
+[04-Sep-2019 18:35:34 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 521
+[04-Sep-2019 18:37:01 Etc/GMT] PHP Warning:  Missing argument 3 for script::update_application(), called in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10 and defined in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 511
+[04-Sep-2019 18:37:01 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 518
+[04-Sep-2019 18:37:01 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 521
+[04-Sep-2019 18:37:20 Etc/GMT] PHP Warning:  Missing argument 3 for script::update_application(), called in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/accept.php on line 10 and defined in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 511
+[04-Sep-2019 18:37:20 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 518
+[04-Sep-2019 18:37:20 Etc/GMT] PHP Notice:  Undefined variable: app in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 521
+[09-Sep-2019 13:11:12 Etc/GMT] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 181
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 34
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 40
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 119
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 126
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 165
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 166
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 169
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 216
+[11-Sep-2019 09:53:04 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view.php on line 245
+[11-Sep-2019 17:53:09 Etc/GMT] PHP Notice:  Undefined index: lname in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 549
+[11-Sep-2019 17:53:14 Etc/GMT] PHP Notice:  Undefined index: lname in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 549
+[11-Sep-2019 18:03:58 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 533
+[11-Sep-2019 18:03:58 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 545
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 34
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 42
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 124
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 132
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 175
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 176
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 179
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 210
+[12-Sep-2019 10:39:29 Etc/GMT] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/view-application.php on line 236
+[12-Sep-2019 16:21:04 Etc/GMT] PHP Notice:  Undefined index: reg_dt in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 146
+[13-Sep-2019 00:45:00 Asia/Kolkata] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/add-transaction.php on line 4
+[13-Sep-2019 00:45:00 Asia/Kolkata] PHP Notice:  Undefined index: uid in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/add-transaction.php on line 99
+[13-Sep-2019 20:05:22 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 31
+[13-Sep-2019 20:05:32 Asia/Kolkata] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/script.php on line 31
+[02-Oct-2019 16:30:04 Asia/Kolkata] PHP Notice:  Undefined index: rcom in /home/centv4sv/public_html/cloudotron.com/projects/macwan-rebuilt/admin/reject-reapply.php on line 32
