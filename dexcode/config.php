@@ -7,10 +7,10 @@
  */
 
 /* Configure your database connection here withinn the double quotation*/
-define("DATABASE_SERVER", "localhost");
+define("DATABASE_SERVER", "localhost:3306");
 define("DATABASE_NAME", "centv4sv_scholarzone");
-define("DATABASE_USERNAME", "admin");
-define("DATABASE_PASSWORD", "admin");
+define("DATABASE_USERNAME", "root");
+define("DATABASE_PASSWORD", "");
 define("DATABASE_PORT","4430");
 
 /* Configure your SMTP Email here within the double quotation*/
