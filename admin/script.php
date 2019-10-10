@@ -700,7 +700,7 @@ class script extends loader{
                 return false;
             }
         }else{
-            echo "Unable to upload files.";
+            echo "Unable to upload files";
         }
         
     }
