@@ -93,20 +93,6 @@ class script extends loader{
                     }
                     echo '</td>';
                     
-                    echo '<td>';
-                    if($row['uform'] == "1"){
-                        echo "Scholarship Form";
-                    }else{
-                        $s = $this->load->database->select("ec_form","uid='".$row['uid']."'","","","");
-                        if(mysqli_num_rows($s)){
-                            echo "EC Form";
-                        }else{
-                            echo "Yet to select";
-                        }
-                    }
-                    
-                    
-                    echo '</td>';
                     echo '<td>'.$row['reg_dt'].'</td>';
                     echo "<td>";
                         $ss = $this->load->database->select("scholarship","uid='".$row['uid']."'","","","");
@@ -161,9 +147,9 @@ class script extends loader{
                     
                     
                     echo '<td>
-                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
-                        <a href="view-application.php?uid='.$row['uid'].'" class="btn btn-sm btn-primary" target="_blank">View App<sup>tn</sup></a>
-                        <a href="add-transaction.php?uid='.$row['uid'].'" class="btn btn-warning btn-sm">Transaction</a>
+                        <a href="#" class="btn btn-sm btn-block btn-danger">Delete</a>
+                        <a href="view-application.php?uid='.$row['uid'].'" class="btn btn-sm btn-block btn-primary" target="_blank">View App<sup>tn</sup></a>
+                        <a href="add-transaction.php?uid='.$row['uid'].'" class="btn btn-block btn-warning btn-sm">Transaction</a>
                     </td>';
                     
                 echo '</tr>';
@@ -705,7 +691,7 @@ class script extends loader{
         $ft = $file['tfile']['name'];
         $ft = $this->load->security->otp("6").$ft;
         if(move_uploaded_file($tft,"../storage/".$ft)){
-            $m = $msg.' <a href="http://localhost/scholarzonee/storage/'.$ft.'">Please find the transaction receipt here</a>';
+            $m = $msg.' <a href="http://localhost:4430/scholarzonee/storage/'.$ft.'">Please find the transaction receipt here</a>';
             //echo "<br>From Debugger: ".$m;
             $sql = $this->load->database->query("insert into status(uid,status,dt,tp) values('".$uid."','".$m."','".date("d-m-Y")."','T')","");
             if($sql){
@@ -734,7 +720,7 @@ class script extends loader{
         }
     }
     public function getReceipt($uid){
-        $url = "http://localhost/scholarzonee/";
+        $url = "http://localhost:4430/scholarzonee/";
         
         $sql = $this->load->database->select("receipt","uid='".$uid."'","","","");
         if(mysqli_num_rows($sql)){
@@ -766,7 +752,7 @@ class script extends loader{
     }
     
     public function getReapply($uid){
-        $url = "http://localhost/scholarzonee/";
+        $url = "http://localhost:4430/scholarzonee/";
         
         $sql = $this->load->database->select("reapply","uid='".$uid."'","","","");
         if(mysqli_num_rows($sql)){

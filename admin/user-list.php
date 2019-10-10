@@ -25,7 +25,6 @@ $script = new script;
                                             <th>Application Form</th>
                                             <th>Date</th>
                                             <th>Scholarship Status</th>
-                                            <th>EC Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
