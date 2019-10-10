@@ -881,9 +881,36 @@ class script extends loader{
                 }
             }
         }
-        
-        
-        
+    }
+
+    public function getMarks($em){
+        $rr = $this->load->database->select("user","email='".$em."'","","","");
+        $rt = mysqli_fetch_array($rr);
+        $uid = $rt['uid'];
+        $r = $this->load->database->select("scholarship","uid='".$uid."'","","","");
+        $y = mysqli_fetch_array($r);
+        $arr = array("ten"=>$y['ten_per'],"tw"=>$y['tw_per'],"grad"=>$y['grad_per']);
+        return $arr;
+    }
+    public function org_register($p){
+        $fname = $p['fname'];
+        $lname = $p['lname'];
+        $email = $p['email'];
+        $pass = $p['pass'];
+        $ep = $this->load->security->encrypt($pass);
+        $cont = $p['phone'];
+        $org = $p['org'];
+        $gender = $p['gender'];
+
+        $sql = $this->load->database->insert("vendor"," fname,lname,email,contact,organization,pass,gender",
+        "'".$fname."','".$lname."','".$email."','".$cont."','".$org."','".$ep."','".$gender."'");
+        if($sql){
+            return true;
+        }else{
+            return false;
+        }
+
+
     }
 
 }

@@ -1,0 +1,17 @@
+<html>
+<head>
+		<script src="js/jquery-2.2.4.min.js"></script>
+<link href="css/speedometer.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="myValues"/></div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/speedometer.js"></script>
+<script type="text/javascript">
+	$("#myValues").myfunc({divFact:10,gagueLabel:'%',maxVal: 100,eventListenerType:'change'});
+	$("#myValues").val(66);
+	$("#myValues").trigger("change");
+</script>
+</html>

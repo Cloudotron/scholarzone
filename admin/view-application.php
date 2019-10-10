@@ -16,9 +16,7 @@ $script = new script;
                           <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#home">Scholarship Application</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#menu1">EC Application</a>
-                          </li>
+                          
                           <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#menu2">Notification</a>
                           </li>
@@ -169,86 +167,7 @@ $script = new script;
                                 
                               <!-- scholarship end -->
                             </div>
-                          <div class="tab-pane container fade" id="menu1">
-                            <?php
-                                    $script->getECForm($_GET['uid']);
-                                    $script->getECDOCS($_GET['uid']);
-                                ?>
-                                <?php 
-                                $n = $script->uinfo($_GET['uid']);
-                                switch($n['ec_status']){
-                                    case "A": ?>
-                                        <div class="form-group" align="center">
-                                            
-                                            
-                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal155">Reject</button>
-                                                
-                                            <div class="modal fade" id="exampleModal155" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Rejection</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                          <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                            <p>Enter Comment: </p>
-                                                          <div class="form-group">
-                                                              <textarea class="form-control" id="r_note"></textarea>
-                                                          </div>
-                                                          <button class="btn btn-block btn-danger" onclick="reject('2','<?php echo $n['uid']; ?>')">Reject</button>
-                                                          <div id="ec_res"></div>
-                                                          <br>
-                                                            
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                
-                                            
-                                            
-                                            <!-- Link to open the modal -->
-                                            
-                                        </div>
-                                    <?php break;
-                                    
-                                    case "R":?>
-                                        <div class="form-group" align="center">
-                                            <a href="accept.php?app=2&uid=<?php echo $_GET['uid']; ?>" class="btn btn-success">Accept</a>
-                                        </div>
-                                    <?php break;
-                                    
-                                    default: ?>
-                                        <?php /*<hr><h3 align="center">Final action for the application</h3>
-                                        <div class="form-group" align="center">
-                                            <a href="accept.php?app=2&uid=<?php echo $_GET['uid']; ?>" class="btn btn-success">Accept</a> &nbsp;
-                                            
-                                            <div id="ex11" class="modal" style="height:250px;">
-                                              <p>Enter Comment: </p>
-                                              
-                                              <div class="form-group">
-                                                  <textarea class="form-control" id="r_note"></textarea>
-                                              </div>
-                                              <button class="btn btn-block btn-danger" onclick="reject('2','<?php echo $n['uid']; ?>')">Reject</button>
-                                              <div id="ec_res"></div>
-                                              <br>
-                                              <a href="#" class="btn bnt-sm btn-danger" rel="modal:close">Close</a>
-                                            </div>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <!-- Link to open the modal -->
-                                            <p><a class="btn btn-danger" href="#ex11" rel="modal:open">Reject</a></p>
-                                            
-                                        </div>*/ ?>
-                                    <?php break;
-                                    
-                                }
-                                ?>
-                          </div>
+                          
                           <div class="tab-pane container fade" id="menu2">
                               <?php
                               $script->getStatus($_GET['uid']);
