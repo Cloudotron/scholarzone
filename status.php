@@ -43,7 +43,6 @@
                           
                             <ul class="nav nav-tabs">
                               <li class="active"><a data-toggle="tab" href="#home">Educational Scholarship Application</a></li>
-                              <li><a data-toggle="tab" href="#menu1">Extra Curricular Achievement Application</a></li>
                               <li><a data-toggle="tab" href="#menu2">Notifications</a></li>
                               <li><a data-toggle="tab" href="#menu3">Upload Receipt</a></li>
                             </ul>
@@ -60,20 +59,6 @@
                                         $script->putSchDoc($uinfo['uid']);
                                     }
                                     ?>
-                                </div>
-                              </div>
-                              <div id="menu1" class="tab-pane fade">
-                                <h3 align="center">Extra Curricular Achievement Application Preview</h3>
-                                <div id="ecf">
-                                    <?php
-                                    if($uinfo['ec_status'] == ""){
-                                        echo "Incomplete EC Application Form. Please fillup the EC form to get the details here.";
-                                    }else{
-                                        $script->getECForm($uinfo['uid']);
-                                        $script->getECDOCS($uinfo['uid']);
-                                    }
-                                    ?>
-                                    
                                 </div>
                               </div>
                               <div id="menu2" class="tab-pane fade">
