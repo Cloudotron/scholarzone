@@ -45,6 +45,7 @@
                               <li class="active"><a data-toggle="tab" href="#home">Educational Scholarship Application</a></li>
                               <li><a data-toggle="tab" href="#menu2">Notifications</a></li>
                               <li><a data-toggle="tab" href="#menu3">Upload Receipt</a></li>
+                              <li><a data-toggle="tab" href="#menu99">Scholarshp predictor</a></li>
                             </ul>
                             
                             <div class="tab-content">
@@ -65,6 +66,28 @@
                                 <h3>Application updates</h3>
                                 <?php $script->getStatus($uinfo['uid']); ?>
                               </div>
+                              <div id="menu99" class="tab-pane fade">
+                                <h3 style="color:#F88147;">Scholarship Prediction</h3>
+                                <div id="myValues" style="width:40px;height:40px;"></div>
+                                <script type="text/javascript">
+                                    $("#myValues").myfunc({divFact:10,gagueLabel:'%',maxVal: 100,eventListenerType:'change'});
+                                    var v = "<?php 
+                                        $ar = $script->getMarks($_SESSION['email']);
+                                        $x10th = $ar['ten'];
+                                        $x12th = $ar['tw'];
+                                        $degree = $ar['grad'];
+                                        echo exec("\"C:\Program Files\R\R-3.6.1\bin\Rscript.exe\" Prediction.R $x10th $x12th $degree");
+                                        
+                                    ?>";
+                                    $("#myValues").val(v);
+                                    $("#myValues").trigger("change");
+                                </script>
+                              </div>
+                              
+
+                              
+
+
                               <div id="menu3" class="tab-pane fade">
                                 <!-- start -->
                                 <div class="row">

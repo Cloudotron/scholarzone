@@ -889,7 +889,7 @@ class script extends loader{
         $uid = $rt['uid'];
         $r = $this->load->database->select("scholarship","uid='".$uid."'","","","");
         $y = mysqli_fetch_array($r);
-        $arr = array("ten"=>$r['ten_per'],"tw"=>$r['w_per'],"grad"=>$r['grad_per']);
+        $arr = array("ten"=>$y['ten_per'],"tw"=>$y['tw_per'],"grad"=>$y['grad_per']);
         return $arr;
     }
 
