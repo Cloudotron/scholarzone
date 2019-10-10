@@ -8,8 +8,20 @@ class script extends loader{
     }
     
     public function login($email,$pass){
-        if($email == "admin@admin.com"){
+        /*if($email == "admin@admin.com"){
             if($pass == "12345"){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }*/
+        $sql = $this->load->database->select("vendor","email='".$email."'","","","");
+        if(mysqli_num_rows($sql)){
+            $ar = mysqli_fetch_array($sql);
+            $dp = $this->load->security->decrypt($ar['pass']);
+            if($dp == $pass){
                 return true;
             }else{
                 return false;

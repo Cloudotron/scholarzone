@@ -56,7 +56,7 @@
                       <li><a href="login.php">Login</a></li>
                       <li><a href="./admin">Org Login</a></li>
                       <li><a href="registration.php">Signup</a></li>
-              
+                      <li><a href="provider-registration.php">Org. Signup</a></li>
                 <?php } ?>
               
                 
