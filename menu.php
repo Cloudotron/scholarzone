@@ -1,5 +1,5 @@
 <header id="header" class="header">
-    <div class="header-top bg-theme-colored border-top-theme-colored2-2px sm-text-center">
+   <!-- <div class="header-top bg-theme-colored border-top-theme-colored2-2px sm-text-center">
       <div class="container">
         <div class="row">          
           <div class="col-md-6">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -53,10 +53,10 @@
                         <!--<li><a href="javascript:void(0)">Shortcodes <span class="label label-danger">New</span></a>-->
                 <?php }else{ ?>
                       <li><a href="index.php">Home</a></li>
-                      <li><a href="login.php">Login</a></li>
+                      <li><a href="login.php">Student Login</a></li>
                       <li><a href="./admin">Org Login</a></li>
-                      <li><a href="registration.php">Signup</a></li>
-                      <li><a href="provider-registration.php">Org. Signup</a></li>
+                      <li><a href="registration.php">Student Signup</a></li>
+                      <li><a href="provider-registration.php">Org Signup</a></li>
                 <?php } ?>
               
                 

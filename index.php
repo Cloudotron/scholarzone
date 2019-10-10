@@ -449,7 +449,7 @@
             <div class="col-md-6">
               <h2 class="text-uppercasetext-theme-colored mt-0 mb-0 mt-sm-30">Welcome to <span class="text-theme-colored2">Scholarzone</span></h2>
               <h4 class="mt-5 mb-15">The Scholarship provider</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel sint, ut. Quisquam doloremque minus possimus eligendi dolore ad.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vel sint, ut. Quisquam doloremque minus possimus eligendi dolore ad.Lorem ipsum dolor sit</p>
+              <p>Scholarzone is one place where you find all your drems turn to reality. We provide a single platform to collaborate both Needy and Providees. You just have to sign up and provide your details and rest all will be taken care automatically.</p>
               <a href="about-us.php" class="btn btn-colored btn-theme-colored2 text-white btn-lg pl-40 pr-40 mt-15">Read More</a>
             </div>
             <div class="col-md-6">
