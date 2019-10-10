@@ -881,9 +881,16 @@ class script extends loader{
                 }
             }
         }
-        
-        
-        
+    }
+
+    public function getMarks($em){
+        $rr = $this->load->database->select("user","email='".$em."'","","","");
+        $rt = mysqli_fetch_array($rr);
+        $uid = $rt['uid'];
+        $r = $this->load->database->select("scholarship","uid='".$uid."'","","","");
+        $y = mysqli_fetch_array($r);
+        $arr = array("ten"=>$r['ten_per'],"tw"=>$r['w_per'],"grad"=>$r['grad_per']);
+        return $arr;
     }
 
 }
