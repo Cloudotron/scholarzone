@@ -52,6 +52,7 @@ session_regenerate_id();
                    
                     <input type="submit" name="sub" class="btn btn-primary btn-user btn-block" value="Login">
                     <input type="reset" class="btn btn-warning btn-user btn-block" value="Clear">
+                    <a href="../index.php" class="btn btn-success btn-user btn-block">Back to Student Portal</a>
                   </form>
                   <br>
                   <?php 
