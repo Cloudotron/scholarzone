@@ -321,6 +321,19 @@
                                                 <label>Phone No. of the College:<code>*</code></label>
                                                 <input type="text" id="col_ph" class="form-control" value="<?php echo $sc['col_phone']; ?>">
                                             </div>
+
+                                            <div class="form-group">
+                                                <label>10th Percentage:<code>*</code></label>
+                                                <input type="text" id="tp" class="form-control" value="<?php echo $sc['ten_per']; ?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>12th percentage:<code>*</code></label>
+                                                <input type="text" id="twp" class="form-control" value="<?php echo $sc['tw_per']; ?>">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Graduation percentage:<code>*</code></label>
+                                                <input type="text" id="gdp" class="form-control" value="<?php echo $sc['grad_per']; ?>">
+                                            </div>
                                         </div>
                                     </div>
                                     <h3 id="phase_2_error">

@@ -534,7 +534,7 @@ class script extends loader{
             array_push($ar,$row);
         }
         
-        $url = "http://localhost/scholarzone/";
+        $url = "http://localhost/scholarzonee/";
         
         $sql2 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='vo_file' and fo!='ec'","raw");
         $mr = array();
@@ -824,7 +824,7 @@ class script extends loader{
         
     }
     public function getReceipt($uid){
-        $url = "http://localhost/scholarzone/";
+        $url = "http://localhost/scholarzonee/";
         
         $sql = $this->load->database->select("receipt","uid='".$uid."'","","","");
         
