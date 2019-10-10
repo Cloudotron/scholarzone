@@ -22,21 +22,13 @@
           <div class="row clearfix">
             <div class="col-xs-12 col-sm-6 col-md-6">
               <ul class="footer-link">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Latest Works</a></li>
-                <li><a href="#">Our Blog</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="index.php">Home</a></li>
               </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
               <ul class="footer-link">
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Finance</a></li>
-                <li><a href="#">Consulting</a></li>
-                <li><a href="#">Insurance</a></li>
-                <li><a href="#">Professional</a></li>
+                <li><a href="#">Donation</a></li>
+                <li><a href="#">Help for Education</a></li>
               </ul>
             </div>
           </div>
@@ -44,30 +36,8 @@
       </div>
       <div class="col-sm-6 col-md-3">
         <div class="widget dark">
-          <h4 class="widget-title line-bottom-theme-colored2">Latest News</h4>
-          <div class="latest-posts">
-            <article class="post media-post clearfix pb-0 mb-10">
-              <a class="post-thumb" href="#"><img src="images/blog/ln1.jpg" alt=""></a>
-              <div class="post-right">
-                <h5 class="post-title mt-0 mb-5"><a href="#">PHP Learning</a></h5>
-                <p class="post-date mb-0 font-12">Mar 08, 2015</p>
-              </div>
-            </article>
-            <article class="post media-post clearfix pb-0 mb-10">
-              <a class="post-thumb" href="#"><img src="images/blog/ln2.jpg" alt=""></a>
-              <div class="post-right">
-                <h5 class="post-title mt-0 mb-5"><a href="#">Web Development</a></h5>
-                <p class="post-date mb-0 font-12">Mar 08, 2015</p>
-              </div>
-            </article>
-            <article class="post media-post clearfix pb-0 mb-10">
-              <a class="post-thumb" href="#"><img src="images/blog/ln3.jpg" alt=""></a>
-              <div class="post-right">
-                <h5 class="post-title mt-0 mb-5"><a href="#">Spoken English</a></h5>
-                <p class="post-date mb-0 font-12">Mar 08, 2015</p>
-              </div>
-            </article>
-          </div>
+          <h4 class="widget-title line-bottom-theme-colored2"></h4>
+          
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
