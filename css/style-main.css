@@ -1,19 +1,5 @@
 @charset "utf-8";
 /*------------------------------------------------------------------
-[Master Stylesheet]
-
-Project:        Imfundo
-Version:        1.0
-Created Date:   01.01.2018
-Primary use:    Education & Courses HTML5 Template - Imfundo
-Author:         ThemeMascot
-URL:            http://themeforest.net/user/ThemeMascot
--------------------------------------------------------------------*/
-/*
-This file contains the common styles of this theme.
-*/
-/*------------------------------------------------------------------
-[table of contents]
 
 * typography.less
 * common.less
@@ -997,7 +983,7 @@ section > .container-fluid {
   padding-bottom: 10px;
 }
 .menuzord-brand img {
-  max-height: 38px;
+  max-height: 68px;
 }
 @media only screen and (max-width: 767px) {
   .menuzord-brand img {

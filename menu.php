@@ -41,7 +41,7 @@
         <div class="container">
           <nav id="menuzord-right" class="menuzord default theme-colored">
           <a class="menuzord-brand pull-left flip mt-20 mt-sm-10 mb-sm-20 pt-5" href="index-mp-layout1.html">
-            <img src="images/logo.png" style="width:100px;" alt="">
+            <img src="images/logo.png" style="margin-top:-13px;" alt="">
           </a>
             <ul class="menuzord-menu">
                 <?php if(isset($_SESSION['email'])){ ?>
