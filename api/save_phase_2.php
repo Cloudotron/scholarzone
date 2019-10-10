@@ -37,6 +37,9 @@
     $col_add = $jd["col_add"];
     $col_pin = $jd["col_pin"];
     $col_wb = $jd["col_wb"];
+    $ten_per = $jd["ten_per"];
+    $tw_per = $jd["tw_per"];
+    $grad_per = $jd["grad_per"];
     
     
     //Get the user id
@@ -55,7 +58,10 @@
     col_add='".$col_add."',
     col_phone='".$col_ph."',
     col_pin='".$col_pin."',
-    col_web='".$col_wb."'","uid='".$uid."'");
+    col_web='".$col_wb."',
+    ten_per='".$ten_per."',
+    tw_per='".$tw_per."',
+    grad_per='".$grad_per."'","uid='".$uid."'");
     
     if($up == true){
         $up = $loader->database->update("user","phase='2'","uid='".$uid."'");

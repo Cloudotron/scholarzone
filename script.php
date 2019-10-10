@@ -63,10 +63,6 @@ class script extends loader{
     $re_file = $file['re_file']['name'];
     $re_file_name = $file['re_file']['tmp_name'];
     
-    /* start */
-    
-    
-    /* done */
     
     $s = $this->load->database->select("scholarship","uid='".$uid."'","","","");
     $sa = mysqli_fetch_array($s);
@@ -102,8 +98,8 @@ class script extends loader{
             $otp = $this->load->security->otp("6");
             $n = $otp.$name[$i];
             if(move_uploaded_file($tmp[$i],"storage/$n")){
-                $error=1;
                 $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','".$type[$i]."','".$n."','".date("d-m-Y")."')");
+                $error=1;
             }else{
                 $error=0;
             }
@@ -114,8 +110,8 @@ class script extends loader{
                 echo "1";
                 $n1 = $this->load->security->otp("6").$_FILES['cm_file']['name'][$i];
                     if(move_uploaded_file($_FILES['cm_file']['tmp_name'][$i],"storage/$n1")){
-                        $error=1;
                         $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','cm_file','".$n1."','".date("d-m-Y")."')");
+                        $error=1;
                     }else{
                         $error=0;
                     }
@@ -123,11 +119,11 @@ class script extends loader{
         }else{
             $n1 = $this->load->security->otp("6").$_FILES['cm_file']['name'];
             if(move_uploaded_file($_FILES['cm_file']['tmp_name'],"storage/$n1")){
-                        $error=1;
-                        $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','cm_file','".$n1."','".date("d-m-Y")."')");
-                    }else{
-                        $error=0;
-                    }
+                $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','cm_file','".$n1."','".date("d-m-Y")."')");
+                $error=1;
+            }else{
+                $error=0;
+            }
         }
         
         if(count($file['vo_file']['name']) >= 0){
@@ -135,8 +131,9 @@ class script extends loader{
                 echo "2";
                 $n2 = $this->load->security->otp("6").$_FILES['vo_file']['name'][$i];
                     if(move_uploaded_file($_FILES['vo_file']['tmp_name'][$i],"storage/$n2")){
-                        $error=1;
+                        
                         $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','vo_file','".$n2."','".date("d-m-Y")."')");
+                        $error=1;
                     }else{
                         $error=0;
                     }
@@ -144,8 +141,9 @@ class script extends loader{
         }else{
             $n2 = $this->load->security->otp("6").$_FILES['vo_file']['name'];
                     if(move_uploaded_file($_FILES['vo_file']['tmp_name'],"storage/$n2")){
-                        $error=1;
+                        
                         $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','vo_file','".$n2."','".date("d-m-Y")."')");
+                        $error=1;
                     }else{
                         $error=0;
                     }
@@ -158,8 +156,9 @@ class script extends loader{
                     echo "1";
                     $n1 = $this->load->security->otp("6").$file['in_file']['name'][$i];
                         if(move_uploaded_file($file['in_file']['tmp_name'][$i],"storage/$n1")){
-                            $error=1;
+                            
                             $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','in_file','".$n1."','".date("d-m-Y")."')");
+                            $error=1;
                         }else{
                             $error=0;
                         }
@@ -167,8 +166,8 @@ class script extends loader{
             }else{
                 $n1 = $this->load->security->otp("6").$_FILES['in_file']['name'];
                 if(move_uploaded_file($file['in_file']['tmp_name'],"storage/$n1")){
-                            $error=1;
                             $this->load->database->query("insert into doc(uid,doc_type,doc_name,dt) values('".$uid."','in_file','".$n1."','".date("d-m-Y")."')");
+                            $error=1;
                         }else{
                             $error=0;
                         }
@@ -193,8 +192,8 @@ class script extends loader{
         
         if($error == 1){
             //update the sch form phase
-            $this->load->database->update("user","phase='4'","uid='".$uid."'");
-            $this->load->database->update("scholarship","sub_date='".date("d-m-Y")."'","uid='".$uid."'");
+            $sq1 = $this->load->database->update("user","phase='4'","uid='".$uid."'");
+            $sq2 = $this->load->database->update("scholarship","sub_date='".date("d-m-Y")."'","uid='".$uid."'");
             header("location:status.php");
         }else{
             echo "<h3 class='alert alert-danger'>Unable to uplaod all the files. Server problem.</h3>";
@@ -536,17 +535,18 @@ class script extends loader{
         
         $url = "http://localhost/scholarzonee/";
         
-        $sql2 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='vo_file' and fo!='ec'","raw");
+        $sql2 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='vo_file' and fo is null","raw");
         $mr = array();
         $vo="";$cm="";
         $c=1;$d=1;
         while($roww = mysqli_fetch_assoc($sql2)){
             if($roww['doc_type'] == "vo_file"){
                 $vo .= "<a class='btn btn-sm btn-primary' href='".$url.'storage/'.$roww['doc_name']."'>Volunteering activity - ".$c."</a>,";
+                //echo $vo;
                 $c++;
             }
         }
-        $sql3 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='cm_file' and fo!='ec'","raw");
+        $sql3 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='cm_file' and fo is null","raw");
         
         while($roww = mysqli_fetch_assoc($sql3)){
             if($roww['doc_type'] == "cm_file"){
@@ -561,8 +561,8 @@ class script extends loader{
         
         
         
-        //echo "<pre>";var_dump($v);echo "</pre>";
-        //echo "<pre>";print_r($voa);echo "</pre>";
+        //echo "<pre>";var_dump($mr['cm']);echo "</pre>";
+        //echo "<pre>";print_r($mr['vo']);echo "</pre>";
         
         if(mysqli_num_rows($sql)){
             echo '<h3>Uploaded Document details</h3>

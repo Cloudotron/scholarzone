@@ -18,7 +18,7 @@ if(!isset($_SESSION['admin_email'])){
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>DexCode Documentation</title>
+  <title>Stern</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

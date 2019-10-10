@@ -473,7 +473,7 @@ class script extends loader{
         
         $url = "http://cloudotron.com/projects/macwan-rebuilt/";
         
-        $sql2 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='vo_file' and fo!='ec'","raw");
+        $sql2 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='vo_file' and fo is null","raw");
         $mr = array();
         $vo="";$cm="";
         $c=1;$d=1;
@@ -483,7 +483,7 @@ class script extends loader{
                 $c++;
             }
         }
-        $sql3 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='cm_file' and fo!='ec'","raw");
+        $sql3 = $this->load->database->query("select doc_type,doc_name from doc where uid='".$uid."' and doc_type='cm_file' and fo is null","raw");
         
         while($roww = mysqli_fetch_assoc($sql3)){
             if($roww['doc_type'] == "cm_file"){
@@ -705,7 +705,7 @@ class script extends loader{
         $ft = $file['tfile']['name'];
         $ft = $this->load->security->otp("6").$ft;
         if(move_uploaded_file($tft,"../storage/".$ft)){
-            $m = $msg.' <a href="http://cloudotron.com/projects/macwan-rebuilt/storage/'.$ft.'">Please find the transaction receipt here</a>';
+            $m = $msg.' <a href="http://localhost/scholarzonee/storage/'.$ft.'">Please find the transaction receipt here</a>';
             //echo "<br>From Debugger: ".$m;
             $sql = $this->load->database->query("insert into status(uid,status,dt,tp) values('".$uid."','".$m."','".date("d-m-Y")."','T')","");
             if($sql){
@@ -734,7 +734,7 @@ class script extends loader{
         }
     }
     public function getReceipt($uid){
-        $url = "http://cloudotron.com/projects/macwan-rebuilt/";
+        $url = "http://localhost/scholarzonee/";
         
         $sql = $this->load->database->select("receipt","uid='".$uid."'","","","");
         if(mysqli_num_rows($sql)){
@@ -766,7 +766,7 @@ class script extends loader{
     }
     
     public function getReapply($uid){
-        $url = "http://cloudotron.com/projects/macwan-rebuilt/";
+        $url = "http://localhost/scholarzonee/";
         
         $sql = $this->load->database->select("reapply","uid='".$uid."'","","","");
         if(mysqli_num_rows($sql)){

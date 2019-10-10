@@ -355,6 +355,10 @@ function validatePhase2(){
     var col_add = __("col_add").value;
     var col_pin = __("col_pin").value;
     var col_wb = __("col_wb").value;
+
+    var ten_per = __("tp").value; 
+    var tw_per = __("twp").value;
+    var grad_per = __("gdp").value;
     
     if(course_name == "" || course_name == " "){
         error("phase_2_error","Course name is required");
@@ -413,10 +417,10 @@ function validatePhase2(){
                 xhr.onreadystatechange = function () { 
                     if (xhr.readyState == 4 && xhr.status == 200) {
                         var res = JSON.parse(xhr.responseText);
-                            //console.log(res);
+                            //console.log(xhr.responseText);
                         if(res.status == "true"){
                             success("phase_2_error",res.msg);
-                            __("nextphase3").disabled = false;
+                            //__("nextphase3").disabled = false;
                             window.location = 'apply-now.php';
                             //__("nextphase3").setAttribute("onclick","openPhase3()");
                             document.getElementById('nextphase3').setAttribute('onclick','openPhase3()');
@@ -436,7 +440,10 @@ function validatePhase2(){
                     "col_ph":col_ph,
                     "col_add":col_add,
                     "col_pin":col_pin,
-                    "col_wb":col_wb
+                    "col_wb":col_wb,
+                    "ten_per":ten_per,
+                    "tw_per":tw_per,
+                    "grad_per" :grad_per
                 }
                 console.log(j);
                 var data = JSON.stringify(j);
